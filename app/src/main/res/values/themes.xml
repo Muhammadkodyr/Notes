@@ -1,0 +1,199 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Notes" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="welcome" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/welcome_to_notes</item>
+        <item name="android:textSize">@dimen/size24</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="signin" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/sign_in</item>
+        <item name="android:textSize">@dimen/size20</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="signUp" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/signUp</item>
+        <item name="android:textSize">@dimen/size20</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="emailG" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/email</item>
+        <item name="android:textSize">@dimen/size16</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="usernameG" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/Username</item>
+        <item name="android:textSize">@dimen/size16</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="passwRG." parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/passRG</item>
+        <item name="android:textSize">@dimen/size16</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="youremail" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/youremail_email_com</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="passwRep." parent="TextAppearance.AppCompat" >
+        <item name="android:text">@string/passRep</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="Username" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/Username</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="passwG" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/password</item>
+        <item name="android:textSize">@dimen/size16</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="passw" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/password</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="forgot" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/forgot_password</item>
+        <item name="android:textSize">@dimen/size16</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="dont" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/don_t_have_an_account</item>
+        <item name="android:textSize">@dimen/size16</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="alrd" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/already_have_an_account</item>
+        <item name="android:textSize">@dimen/size16</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="signup" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/sign_up</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="signin." parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/sign_in</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="notes" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/notes</item>
+        <item name="android:textSize">@dimen/size24</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="signUP" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/sign_up</item>
+        <item name="android:textSize">@dimen/size24</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="signIN" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/sign_in</item>
+        <item name="android:textSize">@dimen/size24</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="mylist" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/my_list</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="Title" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/title</item>
+        <item name="android:textSize">@dimen/size24</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="Content" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/content</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="monday" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/monday_00_00</item>
+        <item name="android:textSize">@dimen/size14</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="TITLE" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/title</item>
+        <item name="android:textSize">@dimen/size36</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="Contentbig" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/content</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="Taptodelete" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/tap_to_delete</item>
+        <item name="android:textSize">@dimen/size20</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+</resources>
