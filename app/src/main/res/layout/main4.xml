@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linearLayout12"
         android:layout_width="92dp"
         android:layout_height="96dp"
         android:layout_marginTop="16dp"
@@ -16,26 +17,20 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            style="@style/notes"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/Comfortaa_Regular"
-            android:text="Notes"
-            android:textColor="@color/black"
-            android:textSize="24dp"></TextView>
+            android:layout_height="wrap_content" />
 
         <TextView
+            style="@style/mylist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            android:fontFamily="@font/Comfortaa_Regular"
-            android:text="My list"
-            android:textColor="@color/black"
-            android:textSize="18dp"></TextView>
+            android:layout_marginTop="13dp" />
 
         <View
             android:layout_width="60dp"
             android:layout_height="2dp"
-            android:background="#000"></View>
+            android:background="#000" />
 
 
     </LinearLayout>
@@ -54,19 +49,22 @@
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginHorizontal="4dp"
-            android:src="@drawable/love"></ImageView>
+            android:src="@drawable/love"
+            android:contentDescription="@string/todo" />
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginHorizontal="4dp"
-            android:src="@drawable/loupe"></ImageView>
+            android:src="@drawable/loupe"
+            android:contentDescription="@string/todo" />
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginHorizontal="4dp"
-            android:src="@drawable/or_circle"></ImageView>
+            android:src="@drawable/or_circle"
+            android:contentDescription="@string/todo" />
 
     </LinearLayout>
 
@@ -85,9 +83,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/plus">
+            android:src="@drawable/plus"
+            android:contentDescription="@string/todo" />
 
-        </ImageView>
 
 
     </LinearLayout>
@@ -103,21 +101,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,UseCompoundDrawables">
 
         <ImageView
             android:layout_width="285dp"
             android:layout_height="130dp"
-            android:src="@drawable/sad_cat2"></ImageView>
+            android:src="@drawable/sad_cat2"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="247dp"
             android:layout_height="97dp"
-            android:fontFamily="@font/Comfortaa_Regular"
             android:gravity="center"
-            android:text="You don’t have notes yet"
-            android:textColor="@color/black"
-            android:textSize="28dp"></TextView>
+            style="@style/donthavenotes"
+             />
 
 
     </LinearLayout>

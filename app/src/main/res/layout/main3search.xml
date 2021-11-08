@@ -9,7 +9,7 @@
         android:id="@+id/linearLayout6"
         android:layout_width="380dp"
         android:layout_height="27dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:gravity="top"
         android:orientation="horizontal"
@@ -21,22 +21,21 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/left_arrow"></ImageView>
+            android:src="@drawable/left_arrow"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:fontFamily="@font/Comfortaa_Regular"
-            android:text="Search notes"
-            android:textColor="@color/black"
-            android:textSize="18dp"></TextView>
+            android:layout_marginStart="7dp"
+            style="@style/search" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="195dp"
-            android:src="@drawable/close"></ImageView>
+            android:layout_marginStart="195dp"
+            android:src="@drawable/close"
+            android:contentDescription="@string/todo" />
 
 
     </LinearLayout>
@@ -48,18 +47,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
+        <View
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:background="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.647"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="43dp"
+            android:layout_marginStart="14dp"
+            tools:ignore="MissingConstraints" />
     </LinearLayout>
 
-    <View
-        android:layout_width="340dp"
-        android:layout_height="2dp"
-        android:background="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.647"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="43dp"
-        android:layout_marginLeft="14dp"
-        tools:ignore="MissingConstraints"></View>
+
 
     <LinearLayout
         android:layout_width="300dp"
@@ -68,20 +68,18 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="261dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints,UseCompoundDrawables">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cat2"></ImageView>
+            android:src="@drawable/cat2"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/Comfortaa_Regular"
-            android:text="No results found"
-            android:textColor="@color/black"
-            android:textSize="28dp"
+            style="@style/noresults"
             android:gravity="center">
         </TextView>
 

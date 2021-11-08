@@ -196,4 +196,27 @@
         <item name="android:fontFamily">@font/Comfortaa_Regular</item>
     </style>
 
+    <style name="search" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/search_notes</item>
+        <item name="android:textSize">@dimen/size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="noresults" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/no_results_found</item>
+        <item name="android:textSize">@dimen/size28</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+    <style name="donthavenotes" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/don_t_have_an_account</item>
+        <item name="android:textSize">@dimen/size28</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/Comfortaa_Regular</item>
+    </style>
+
+
+
 </resources>
