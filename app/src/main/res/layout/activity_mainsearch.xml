@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".mainsearch">
 
     <LinearLayout
         android:id="@+id/linearLayout6"
@@ -19,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/back"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/left_arrow"
@@ -41,6 +43,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,38 +53,39 @@
         <View
             android:layout_width="340dp"
             android:layout_height="2dp"
+            android:layout_marginStart="14dp"
             android:background="#000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.647"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="43dp"
-            android:layout_marginStart="14dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="43dp" />
     </LinearLayout>
-
 
 
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:layout_marginTop="152dp"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="261dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
         tools:ignore="MissingConstraints,UseCompoundDrawables">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cat2"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/cat2" />
 
         <TextView
+            style="@style/noresults"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            style="@style/noresults"
-            android:gravity="center">
-        </TextView>
+            android:gravity="center" />
 
 
     </LinearLayout>
