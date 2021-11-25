@@ -211,7 +211,7 @@
     </style>
 
     <style name="donthavenotes" parent="TextAppearance.AppCompat">
-        <item name="android:text">@string/don_t_have_an_account</item>
+        <item name="android:text">@string/you_don_t_have_notes_yet</item>
         <item name="android:textSize">@dimen/size28</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/comfortaa_regular</item>
