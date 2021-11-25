@@ -92,31 +92,27 @@
 
     <LinearLayout
         android:id="@+id/linearLayout9"
-        android:layout_width="326dp"
-        android:layout_height="319dp"
-        android:layout_marginBottom="252dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints,UseCompoundDrawables">
 
         <ImageView
             android:layout_width="285dp"
             android:layout_height="130dp"
-            android:src="@drawable/sad_cat2"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/sad_cat2" />
 
         <TextView
+            style="@style/donthavenotes"
             android:layout_width="247dp"
             android:layout_height="97dp"
-            android:gravity="center"
-            style="@style/donthavenotes"
-             />
+            android:gravity="center" />
 
 
     </LinearLayout>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linearLayout16"
         android:layout_width="92dp"
         android:layout_height="96dp"
         android:layout_marginTop="16dp"
@@ -16,15 +17,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            style="@style/notes"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/notes" />
+            android:layout_height="wrap_content" />
 
         <TextView
+            style="@style/mylist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            style="@style/mylist" />
+            android:layout_marginTop="13dp" />
 
         <View
             android:layout_width="60dp"
@@ -70,14 +71,12 @@
     <LinearLayout
         android:layout_width="383dp"
         android:layout_height="76dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/custom_button2"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
 
 
         <LinearLayout
@@ -87,43 +86,43 @@
 
 
             <TextView
+                style="@style/Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
-                android:layout_marginTop="4dp"
-                style="@style/Title" />
+                android:layout_marginTop="4dp" />
 
             <TextView
+                style="@style/Content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                style="@style/Content" />
+                android:layout_marginStart="7dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
+            android:layout_marginStart="185dp"
             android:gravity="end"
             android:orientation="vertical"
-            android:layout_marginStart="185dp"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="23dp"
                 android:layout_height="23dp"
-                android:src="@drawable/heart"
                 android:layout_marginTop="10dp"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/todo"
+                android:src="@drawable/heart" />
 
             <TextView
                 android:id="@+id/textView"
+                style="@style/monday"
                 android:layout_width="135dp"
                 android:layout_height="35dp"
                 android:layout_gravity="start"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="7dp"
-                style="@style/monday" />
+                android:layout_marginEnd="7dp" />
 
         </LinearLayout>
 
