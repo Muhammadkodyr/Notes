@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".main2v1">
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -18,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/back"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/left_arrow"
@@ -49,6 +51,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
+            android:id="@+id/check"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:contentDescription="@string/todo"
@@ -76,8 +79,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="378dp"
-        android:layout_height="144dp"
+        android:id="@+id/linearLayout7"
+        android:layout_width="384dp"
+        android:layout_height="77dp"
         android:layout_marginTop="4dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,14 +98,38 @@
         <View
             android:layout_width="360dp"
             android:layout_height="2dp"
-            android:background="#000"
-            android:layout_marginTop="7dp" />
+            android:layout_marginTop="7dp"
+            android:background="#000" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        android:gravity="center"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/square"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            style="@style/Contentbig" />
+            style="@style/Content"
+            android:layout_gravity="top"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginBottom="8dp" />
 
     </LinearLayout>
 
@@ -115,14 +143,16 @@
         android:gravity="center">
 
         <ImageView
+            android:id="@+id/taskOrange"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/square"
+            android:src="@drawable/orsquare"
             android:layout_marginHorizontal="35dp"
             android:contentDescription="@string/todo">
         </ImageView>
 
         <ImageView
+            android:id="@+id/list"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/list__2_"
@@ -131,6 +161,7 @@
         </ImageView>
 
         <ImageView
+            android:id="@+id/gallery"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/gallery"
@@ -138,7 +169,7 @@
             android:contentDescription="@string/todo">
         </ImageView>
 
-        
+
 
 
     </LinearLayout>

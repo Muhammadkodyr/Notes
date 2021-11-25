@@ -10,6 +10,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Notes">
         <activity
+            android:name=".main7"
+            android:exported="true" />
+        <activity
+            android:name=".mainliked"
+            android:exported="true" />
+        <activity
+            android:name=".maindelete"
+            android:exported="true" />
+        <activity
+            android:name=".maindont"
+            android:exported="true" />
+        <activity
+            android:name=".mainsearch"
+            android:exported="true" />
+        <activity
+            android:name=".main2v3"
+            android:exported="true" />
+        <activity
+            android:name=".main2v2"
+            android:exported="true" />
+        <activity
+            android:name=".main2v1"
+            android:exported="true" />
+        <activity
+            android:name=".main2"
+            android:exported="true"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Notes.NoActionBar" />
+        <activity
+            android:name=".main1"
+            android:exported="true" />
+        <activity
+            android:name=".main0"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

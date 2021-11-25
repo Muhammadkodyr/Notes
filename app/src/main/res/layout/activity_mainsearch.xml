@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".mainsearch">
 
     <LinearLayout
         android:id="@+id/linearLayout6"
@@ -19,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/back"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/left_arrow"
@@ -41,7 +43,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout14"
+        android:id="@+id/linearLayout13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,15 +64,15 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="152dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
         tools:ignore="MissingConstraints,UseCompoundDrawables">
 
         <ImageView
