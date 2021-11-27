@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main2v1">
+    tools:context=".Main2v1">
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -51,7 +51,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/check"
+            android:id="@+id/addnote"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:contentDescription="@string/todo"

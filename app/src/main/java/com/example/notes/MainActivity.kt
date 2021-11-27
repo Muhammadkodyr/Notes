@@ -14,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.signUp)
 
         textView.setOnClickListener{
-            startActivity(Intent(this,main0::class.java))
+            startActivity(Intent(this,Main0::class.java))
         }
 
         val button = findViewById<Button>(R.id.signinButton)
 
         button.setOnClickListener{
-            startActivity(Intent(this,maindont::class.java))
+            startActivity(Intent(this,Maindont::class.java))
         }
 
     }

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
-class main0 : AppCompatActivity() {
+class Main0 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main0)
@@ -19,7 +19,7 @@ class main0 : AppCompatActivity() {
         val button = findViewById<Button>(R.id.signupButton)
 
         button.setOnClickListener{
-            startActivity(Intent(this,maindont::class.java))
+            startActivity(Intent(this,Maindont::class.java))
         }
 
 
