@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main2v1">
+    tools:context=".NoteViewActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -45,17 +45,11 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.995"
         app:layout_constraintStart_toEndOf="@+id/linearLayout5"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/check"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/tick" />
 
         <ImageView
             android:layout_width="28dp"
@@ -79,9 +73,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="384dp"
-        android:layout_height="77dp"
+        android:layout_width="378dp"
+        android:layout_height="144dp"
         android:layout_marginTop="4dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,80 +91,16 @@
         <View
             android:layout_width="360dp"
             android:layout_height="2dp"
-            android:layout_marginTop="7dp"
-            android:background="#000" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
-        android:gravity="center"
-        tools:ignore="UseCompoundDrawables">
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/square"
-            android:contentDescription="@string/todo" />
+            android:background="#000"
+            android:layout_marginTop="7dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            style="@style/Content"
-            android:layout_gravity="top"
-            android:layout_marginHorizontal="7dp"
-            android:layout_marginBottom="8dp" />
+            style="@style/Content" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@color/gray1"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/taskOrange"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/orsquare"
-            android:layout_marginHorizontal="35dp"
-            android:contentDescription="@string/todo">
-        </ImageView>
-
-        <ImageView
-            android:id="@+id/list"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/list__2_"
-            android:layout_marginHorizontal="35dp"
-            android:contentDescription="@string/todo">
-        </ImageView>
-
-        <ImageView
-            android:id="@+id/gallery"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/gallery"
-            android:layout_marginHorizontal="35dp"
-            android:contentDescription="@string/todo">
-        </ImageView>
-
-
-
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main7">
+    tools:context=".AddNoteActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -45,11 +45,16 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/linearLayout5"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/tick" />
 
         <ImageView
             android:layout_width="28dp"
@@ -98,9 +103,49 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            style="@style/Content" />
+            style="@style/Contentbig" />
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/gray1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/task"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/square"
+            android:layout_marginHorizontal="35dp"
+            android:contentDescription="@string/todo">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/list__2_"
+            android:layout_marginHorizontal="35dp"
+            android:contentDescription="@string/todo">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gallery"
+            android:layout_marginHorizontal="35dp"
+            android:contentDescription="@string/todo">
+        </ImageView>
+
+
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

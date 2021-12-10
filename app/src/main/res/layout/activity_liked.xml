@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main1">
+    tools:context=".LikedActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout16"
         android:layout_width="92dp"
         android:layout_height="96dp"
         android:layout_marginTop="16dp"
@@ -17,17 +18,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            style="@style/notes"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/comfortaa_regular"
-            style="@style/notes" />
+            android:layout_height="wrap_content" />
 
         <TextView
+            style="@style/mylist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            android:fontFamily="@font/comfortaa_regular"
-            style="@style/mylist" />
+            android:layout_marginTop="13dp" />
 
         <View
             android:layout_width="60dp"
@@ -48,14 +47,15 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/like"
+            android:id="@+id/heart"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginHorizontal="4dp"
-            android:src="@drawable/love"
+            android:src="@drawable/heart"
             android:contentDescription="@string/todo" />
 
         <ImageView
+            android:id="@+id/searchloupe"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginHorizontal="4dp"
@@ -72,16 +72,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout14"
         android:layout_width="383dp"
         android:layout_height="76dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/custom_button2"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
 
 
         <LinearLayout
@@ -106,20 +104,28 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="190dp"
-            android:layout_marginTop="46dp"
-            android:orientation="horizontal">
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="185dp"
+            android:gravity="end"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/heart" />
 
             <TextView
                 android:id="@+id/textView"
                 style="@style/monday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginEnd="7dp"
-                tools:ignore="RtlHardcoded" />
+                android:layout_width="135dp"
+                android:layout_height="35dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="7dp" />
 
         </LinearLayout>
 
@@ -131,18 +137,16 @@
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
-        app:layout_constraintVertical_bias="0.932"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/plusnote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/plus">
+            android:src="@drawable/plus"
+            android:contentDescription="@string/todo">
 
         </ImageView>
 
